@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Dinesh {
 	public static void main(String[] args) {
@@ -6,9 +7,9 @@ public class Dinesh {
 		System.out.println(Arrays.toString(populateArray(100)));
 	}
 
-	public static void populateArray(int n){
+	public static int[] populateArray(int n){
 		int[] toReturn = new int[n+1];
-		for(int i=0; i < n; i++){
+		for(int i=0; i <= n; i++){
 			toReturn[i] = i;
 		}
 		return toReturn;
